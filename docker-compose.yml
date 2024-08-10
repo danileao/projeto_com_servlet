@@ -1,0 +1,9 @@
+version: '3'
+services:
+  tomcat:
+    image: tomcat:10
+    container_name: tomcat-projeto-servlet
+    ports:
+      - "8083:8080"
+    volumes:
+      - ./target:/usr/local/tomcat/webapps
